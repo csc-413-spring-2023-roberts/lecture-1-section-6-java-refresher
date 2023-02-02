@@ -51,23 +51,23 @@ public class Node<T extends Comparable<T>> {
 
   public void inorder() {
     if (this.left != null) {
-      this.left.preorder();
+      this.left.inorder();
     }
 
     System.out.print(this.data + " ");
 
     if (this.right != null) {
-      this.right.preorder();
+      this.right.inorder();
     }
   }
 
   public void postorder() {
     if (this.left != null) {
-      this.left.preorder();
+      this.left.postorder();
     }
 
     if (this.right != null) {
-      this.right.preorder();
+      this.right.postorder();
     }
 
     System.out.print(this.data + " ");
